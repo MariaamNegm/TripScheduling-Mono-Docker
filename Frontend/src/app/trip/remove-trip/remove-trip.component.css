@@ -1,0 +1,14 @@
+.mat-toolbar{
+    background-color: rgb(28, 28, 89);
+    color: white;
+    border-radius: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.85cm;
+}
+.mat-card{
+    margin-top: 50px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}

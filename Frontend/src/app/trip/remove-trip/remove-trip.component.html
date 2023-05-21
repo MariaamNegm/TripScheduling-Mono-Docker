@@ -1,0 +1,24 @@
+<!--<p>remove-trip works!</p>-->
+
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Delete trip</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="=add-station-form">
+             <mat-form-field >
+              <input matInput type="text" placeholder="enter trip id" name="id" [(ngModel)]="id" >
+             </mat-form-field>
+ 
+            <button (click)="deletetripbyid(id)" class="btn btn-success">Delete</button>
+          </form>
+          
+    </mat-card>
+ 
+</div>
+
+
+<div>
+    <button class="'nav"><a routerLink="/home">home</a></button>
+  </div>
+  <div><button class="'nav"><a routerLink="/trip">All Trips</a></button></div>
+    

@@ -1,0 +1,23 @@
+
+table, td, th {
+    border: 1px solid;
+    border-color: black;
+  }
+  th{
+    background-color: rgb(28, 28, 89);
+    color:white;
+  }
+  
+  table {
+    width: 60%;
+    border-collapse: collapse;
+  }
+  input{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  button a{
+    text-decoration: none;
+    color: black;
+}

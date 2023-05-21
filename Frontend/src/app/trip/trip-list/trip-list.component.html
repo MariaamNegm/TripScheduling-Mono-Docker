@@ -1,0 +1,33 @@
+<!--<p>trip-list works!</p>-->
+<h1>All Trips:</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">start time</th>
+        <th scope="col">end time</th>
+        <th scope="col">trip Name</th>
+        <th scope="col">from station id</th>
+        <th scope="col">from station name</th>
+        <th scope="col">to station id</th>
+        <th scope="col">to station name</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of trip">
+        <td>{{t.id}}</td>
+        <td>{{t.start_time}}</td>
+        <td>{{t.end_time}}</td>
+       <td>{{t.name}}</td>
+       <td>{{t.from_station.id}}</td>
+       <td>{{t.from_station.name}}</td>
+       <td>{{t.to_station.id}}</td>
+       <td>{{t.to_station.name}}</td>
+       
+      </tr>
+ 
+    </tbody>
+  </table>
+
+  <button class="'nav"><a routerLink="/home">home</a></button>

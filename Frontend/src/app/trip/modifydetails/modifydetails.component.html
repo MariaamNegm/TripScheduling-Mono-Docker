@@ -1,0 +1,40 @@
+<!--<p>updatetrip works!</p>-->
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+      <mat-toolbar color="primary"> Upadte Trip</mat-toolbar>
+      <ng-container *ngIf="submitted">
+          <p>successfully</p>
+      </ng-container>
+      <ng-container *ngIf="!submitted"> 
+      <form #f="ngForm" (ngSubmit)="handleSubmit(f)" fxLayout="column" class="=add-station-form" >
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter start time" name="start_time" [(ngModel)]="trip.start_time" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter end time" name="end_time" [(ngModel)]="trip.end_time" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="number" placeholder="enter From_station ID" name="fromid" [(ngModel)]="trip.fromid" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="number" placeholder="enter to_station ID" name="toid" [(ngModel)]="trip.toid" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter trip name" name="name" [(ngModel)]="trip.name" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="number" placeholder="enter trip ID" name="id" [(ngModel)]="trip.id" >
+        </mat-form-field>
+        <button type="submit" class="btn btn-success">Update</button>
+        </form>
+      </ng-container>
+  </mat-card>
+<br>
+  
+<div>
+  <td>
+    <button class="'nav"><a routerLink="/home">home</a></button>
+<button class="'nav"><a routerLink="/trip">All Trips</a></button>
+</td>
+</div>
+

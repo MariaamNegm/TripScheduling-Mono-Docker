@@ -1,0 +1,46 @@
+<!--<p>remove-station works!</p>
+
+
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Add Station</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="=add-station-form">
+            <mat-form-field >
+              <input matInput type="text" placeholder="enter id for station to be deleted" name="id" [(ngModel)]="station.id" >
+            </mat-form-field>
+ 
+            <button (click)="removestation()" class="btn btn-success">Submit</button>
+          </form>
+          
+    </mat-card>
+
+    <div *ngIf="submitted">
+      <h4>Station was submitted successfully!</h4>
+      <button class="btn btn-success" (click)="newstation()">Add</button>
+    </div>
+</div>
+-->
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+      <mat-toolbar color="primary">Delete Station</mat-toolbar>
+      <form fxLayoutAlign="stretch" fxLayout="column" class="=add-station-form">
+           <mat-form-field >
+            <input matInput type="text" placeholder="enter station id" name="id" [(ngModel)]="id" >
+           </mat-form-field>
+
+          <button (click)="deleteStationbyid(id)" class="btn btn-success">Delete</button>
+</form>
+        
+  </mat-card>
+
+</div>
+<div>
+  <button class="'nav"><a routerLink="/home">home</a></button>
+  <br>
+</div>
+<div><button class="'nav"><a routerLink="/station">All Stations</a></button></div>
+  
+
+

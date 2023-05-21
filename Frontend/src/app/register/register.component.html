@@ -1,0 +1,22 @@
+<!--<p>register works!</p>-->
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar >Register</mat-toolbar>
+          <form id="formData" #userData ="ngForm" (ngSubmit) = "registerUser(userData.value)">        
+              
+              <br>
+              <mat-form-field>
+              <input matInput placeholder="email" name= "email" type="email" ngModel>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+              <input matInput placeholder ="password " name="password" type="password" ngModel>
+              </mat-form-field>
+              <br>
+              <td><input type="submit" value= "Register" mat-Button></td>
+              </form>
+            
+
+
+              

@@ -1,0 +1,39 @@
+<!--<p>searchbyid works!</p>
+      
+      <table class="table" style="border:solid;">
+          <thead>
+            <tr>
+              <th scope="col">#id</th>
+              <th scope="col">name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stat of station">
+              <th >{{stat.id}} </th>
+              <td>{{stat.name}}</td>
+            </tr>
+       
+          </tbody>
+        </table>
+
+    -->
+        <input type="text" placeholder="Search id" [(ngModel)]="id" (input)="search()"> 
+     
+        <table >
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">station name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let stat of station">
+                <th >{{stat.id}} </th>
+                <td>{{stat.name}}</td>
+              </tr>
+         
+            </tbody>
+          </table>
+
+          <button class="'nav"><a routerLink="/home">home</a></button>
+        

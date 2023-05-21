@@ -1,0 +1,20 @@
+<!--<p>station-list works!</p>-->
+
+<h1> All Stations:</h1>
+<table class="table" style="border:solid;">
+    <thead>
+      <tr>
+        <th scope="col">station id</th>
+        <th scope="col">station name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stat of station">
+        <th >{{stat.id}} </th>
+        <td>{{stat.name}}</td>
+      </tr>
+ 
+    </tbody>
+  </table>
+
+  <button class="'nav"><a routerLink="/home">home</a></button>

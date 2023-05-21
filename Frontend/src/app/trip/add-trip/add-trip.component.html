@@ -1,0 +1,37 @@
+<!--<p>add-trip works!</p>-->
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+      <mat-toolbar color="primary">Add New Trip</mat-toolbar>
+      <form fxLayoutAlign="stretch" fxLayout="column" class="=add-station-form">
+    <mat-form-field >
+          <input matInput type="number" placeholder="enter from station id " name="fromid" [(ngModel)]="trip.fromid" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="number" placeholder="enter to station id " name="toid" [(ngModel)]="trip.toid" >
+        </mat-form-field>
+     
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter start time" name="start_time" [(ngModel)]="trip.start_time" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter end time" name="end_time" [(ngModel)]="trip.end_time" >
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput type="text" placeholder="enter trip name" name="trip_name" [(ngModel)]="trip.name" >
+        </mat-form-field>
+          <button (click)="savetrip()" class="btn btn-success">Submit</button>
+        </form>
+        
+  </mat-card>
+
+  <div *ngIf="submitted">
+    <h4>Station was submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newtrip()">Add</button>
+  </div>
+</div>
+<div>
+  <button class="'nav"><a routerLink="/home">home</a></button>
+</div>
+<div><button class="'nav"><a routerLink="/trip">All Trips</a></button></div>
+  

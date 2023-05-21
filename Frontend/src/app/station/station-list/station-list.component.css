@@ -1,0 +1,23 @@
+
+table, td, th {
+    border: 1px solid;
+    margin: auto;
+    border-color: black;
+  }
+  thead{
+    background-color: rgb(28, 28, 89);
+    color:white;
+  }
+  
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  h1{
+    text-align: center;
+  }
+  button a{
+    text-decoration: none;
+    color: black;
+}

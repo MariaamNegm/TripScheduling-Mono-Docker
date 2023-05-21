@@ -1,0 +1,38 @@
+<!--<p>searchtripbyname works!</p>-->
+
+<input type="text" placeholder="Search name" [(ngModel)]="name" (input)="search()"> 
+     
+        <table class="table" style="border:solid;">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">start_time</th>
+                <th scope="col">end_time</th>
+                <th scope="col">tripName</th>
+                <th scope="col">from_station_id</th>
+                <th scope="col">from_station_name</th>
+                <th scope="col">to_station_id</th>
+                <th scope="col">to_station_name</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let t of trip">
+                    <td>{{t.id}}</td>
+                    <td>{{t.start_time}}</td>
+                    <td>{{t.end_time}}</td>
+                   <td>{{t.name}}</td>
+                   <td>{{t.from_station.id}}</td>
+                   <td>{{t.from_station.name}}</td>
+                   <td>{{t.to_station.id}}</td>
+                   <td>{{t.to_station.name}}</td>
+                   
+                  </tr>
+         
+            </tbody>
+          </table>
+<div>
+  <button class="'nav"><a routerLink="/home">home</a></button>
+</div>
+   
+
+         
